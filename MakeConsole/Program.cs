@@ -9,7 +9,11 @@ namespace File
     {
       Console.WriteLine("Enter Project name");
       string projName = Console.ReadLine();
-      MakeFiles.Start(projName, "namespace");
+
+      Console.WriteLine("Enter a NameSpace name");
+      string nameSapce = Console.ReadLine();
+
+      MakeFiles.Start(projName, nameSapce);
       Console.WriteLine(@"
             __         __
            /.-'       `-.\

@@ -1,6 +1,5 @@
 using System;
 using System.IO;
-using Game.Views;
 
 
 namespace File.Models
@@ -9,8 +8,6 @@ namespace File.Models
   {
     public static void Start(string projName, string nameSpace)
     {
-      //run getDir
-      //run MakeOutput
       string dir = GetDirectory();
       MakeOutput(dir, projName, nameSpace);
     }
@@ -30,11 +27,11 @@ namespace File.Models
       System.Console.WriteLine($"Writing outPut {OutputPath}");
 
       string gitignore = Path.Combine(OutputPath, ".gitignore");
-      System.IO.File.Create(gitignore);
+      System.IO.File.WriteAllText(gitignore, Copy.GitFile(projName));
       System.Console.WriteLine($"Writing gitignore {gitignore}");
 
       string README = Path.Combine(OutputPath, "README.md");
-      System.IO.File.Create(README);
+      System.IO.File.WriteAllText(README, "");
       System.Console.WriteLine($"Writing gitignore {README}");
 
       //Program
@@ -43,11 +40,11 @@ namespace File.Models
       System.Console.WriteLine($"Writing programPath {programPath}");
 
       string csproj = Path.Combine(programPath, $"{projName}.csproj");
-      System.IO.File.Create(csproj);
+      System.IO.File.WriteAllText(csproj, Copy.Csproj());
       System.Console.WriteLine($"Writing csproj {csproj}");
 
       string programcs = Path.Combine(programPath, $"Program.cs");
-      System.IO.File.Create(programcs);
+      System.IO.File.WriteAllText(programcs, Copy.ProgramCs(nameSpace));
       System.Console.WriteLine($"Writing programcs {programcs}");
 
       string modelsPath = Path.Combine(programPath, "Models");
@@ -59,16 +56,15 @@ namespace File.Models
       System.Console.WriteLine($"Writing modelcs {modelcs}");
 
 
-
       //Test section
       string testPath = Path.Combine(OutputPath, projName + ".Tests");
       Directory.CreateDirectory(testPath);
       string modeltestPath = Path.Combine(testPath, "ModelTests");
       Directory.CreateDirectory(modeltestPath);
       string testcsproj = Path.Combine(testPath, $"{projName}.Tests.csproj");
-      System.IO.File.Create(testcsproj);
+      System.IO.File.WriteAllText(testcsproj, Copy.TestCsproj(projName));
       string modelTestcs = Path.Combine(modeltestPath, $"{projName}Tests.cs");
-      System.IO.File.Create(modelTestcs);
+      System.IO.File.WriteAllText(modelTestcs, Copy.ModelsTest(nameSpace));
 
     }
   }
