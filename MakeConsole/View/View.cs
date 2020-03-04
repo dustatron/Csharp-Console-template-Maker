@@ -1,0 +1,81 @@
+using System;
+
+namespace Game.Views
+{
+  class Show
+  {
+    public static void ShowNuke()
+    {
+      Console.WriteLine(@"
+     _.-^^---....,,--       
+ _--                  --_  
+<                        >)
+|                         | 
+ \._                   _./  
+    ```--. . , ; .--'''       
+          | |   |             
+       .-=||  | |=-.   
+       `-=#$%&%$#=-'   
+          | ;  :|     
+ _____.,-#%&$@%#&#~,._____
+      ");
+      Console.WriteLine("Nuke!");
+    }
+
+    public static void ShowSpock()
+    {
+      Console.WriteLine(@"
+     
+                            .ss$$$$$$$$$$$$$$$ss.
+                       .s$$$$$$$$$$$$$$$$$$$$$$$$$$ss.
+                   .s$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$s
+                 .$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$.
+               .$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$s
+             .$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$s.
+            $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+          .$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+          $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+        .$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+        $$$$$$$$$$$$$$$$$$$$                                  $$
+        $$$$$$$$$$$$$$$$$$     .
+       s$$$$$$$$$$$$$$$$$     sssss.                           s
+      ss $$$$$$$$$$$$$$$          ssss                      ss$s
+     sss   $$$$$$$$$$$            ssss$$$$ss              $$$$s.
+    sssss   $$$$$$$$   s.      .sss$$$$$$$$sss      sss$$$$$$s
+    ss$ssss  $$$$$$$  sss.  .ss$$$$$$ss$ss     .         s$$$$s.
+    ss$s   s  $$$$$$ ss.ss           ..        ss           .sss
+     ss   s $s $$$$$ ss..s.                   ss
+      s ss$$$$s $$$$ ssssss.                 .ss
+    ss     s$$$s $$$ ssssssssss..           ssss.              .
+    ss      $$  s $$ ss..ss$$$$sss        .sssss              ..
+     s      s$$ss  $ ssss.sss$$$sss       .sssss.     ss..
+      s.     $     $ .sss . .ss$sss        .  sssssss...   ss$
+        ss   sssss$$ ..ss   ...sssss            .sss.       s
+          ss    $$ $ .ss..s .sssssss
+            ss$$  $$  .ssssss .sssss              ..       $
+                $$$$  .ss$$ssss...s.s        ..sss$$ssss.
+               $$.$$$  .ss$$sss.. sss.    .ssss$$s..s$ss. s
+               ss ssss  .sssssss...sss.      .ssss$$ss..  .
+               ss  ssss   .ssssssss.sss.        .sss.
+               ss    .ssss    .sssssssss.               s
+               ss      .sssss.  .sssssss.s .. ..ss$s. .s
+              ss         sssssss.  .sssssssssssss$$s. .ss
+            $ss           ssssssss.   ..sssssssssss  .ss.
+          $$$$.            .sssssssss.     ssssss ssss.$s
+      s$$$$$$$$s.             ..ssssssssss......ssss. s$$$s
+    .s$$$$$$$$$$$s.              .ssssssssssssssss. s$$$$$ss.
+       s$$$$$$$$$$$$$$ss..          .ssssssssss. .s$$$$$$$$s
+         s$$$$$$$$$$$$$$$$$$$ssss...   ...ss.. s$$$$$$$$$s
+           s$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$s
+              .s$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$s
+                    .s$$$$$$$$$$$$$$$$$$$$$$$$$$$$$s
+                          .s$$$$$$$$$$$$$$$$$$$$s
+                                ..s$$$$$$$$$$s
+
+      ");
+      Console.WriteLine("Spock!");
+    }
+  }
+
+}
+
