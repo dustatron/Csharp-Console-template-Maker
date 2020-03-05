@@ -29,7 +29,7 @@ namespace File
       Console.Write("NameSpace : ");
       string nameSapce = Console.ReadLine();
 
-      MakeFiles.Start(path, projName, nameSapce);
+      MakeFiles.Start(projName, nameSapce, path);
       Console.WriteLine(@"
                _____  _____ ______  _____  _   _  _____   _____  _____ ___  ___ _____ 
               /  __ \|  _  ||  _  \|_   _|| \ | ||  __ \ |_   _||_   _||  \/  ||  ___|
