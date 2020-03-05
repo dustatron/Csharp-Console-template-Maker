@@ -17,6 +17,10 @@ namespace File
                                         _/ |                                                  
                                        |__/                                                   
       ");
+      Console.WriteLine("Enter path to Desktop");
+      Console.Write("Path : ");
+      string path = Console.ReadLine();
+
       Console.WriteLine("Enter Project name");
       Console.Write("Name : ");
       string projName = Console.ReadLine();
@@ -25,7 +29,7 @@ namespace File
       Console.Write("NameSpace : ");
       string nameSapce = Console.ReadLine();
 
-      MakeFiles.Start(projName, nameSapce);
+      MakeFiles.Start(path, projName, nameSapce);
       Console.WriteLine(@"
                _____  _____ ______  _____  _   _  _____   _____  _____ ___  ___ _____ 
               /  __ \|  _  ||  _  \|_   _|| \ | ||  __ \ |_   _||_   _||  \/  ||  ___|
