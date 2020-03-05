@@ -6,10 +6,12 @@ namespace File.Models
 {
   public class MakeFiles
   {
-    public static void Start(string projName, string nameSpace, string where)
+    public static void Start(string projName, string nameSpace)
     {
-      string dir = GetDirectory();
-      MakeOutput(where, projName, nameSpace);
+      //This is the starting directory. Change if you hare having issues.
+      //Should spit out new folder on desktop. Might not work on windows
+      string outputDirectory = "../../";
+      MakeOutput(outputDirectory, projName, nameSpace);
     }
     public static string GetDirectory()
     {

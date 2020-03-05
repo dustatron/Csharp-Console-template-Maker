@@ -71,8 +71,9 @@ using System;
 
 namespace " + nameSpace + @".Tests
 {
+  //change name of test class.
   [TestClass]
-  public class MakeFilesTests
+  public class ChangeNameOfClassTests
   {
     [TestMethod]
     public void MethodName_WhatItDoes_ReturnObject()
@@ -93,9 +94,11 @@ namespace " + nameSpace + @".Tests
 
 namespace " + nameSpace + @".Models
 {
-  class Test
+  //change name of class.
+  class ChangeNameOfClass
   {
-    public static void Temp()
+    //Change the name of the method.
+    public static void TempMethod()
     {
 
     }
