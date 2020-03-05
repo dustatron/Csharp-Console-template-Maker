@@ -10,16 +10,15 @@ namespace File.Models
     {
       //This is the starting directory. Change if you hare having issues.
       //Should spit out new folder on desktop. Might not work on windows
-      string outputDirectory = "../../";
+      string outputDirectory = GetDirectory();
+
       MakeOutput(outputDirectory, projName, nameSpace);
     }
     public static string GetDirectory()
     {
-      string path = Directory.GetCurrentDirectory();
-      int homePathIndex = path.IndexOf(".Solutions") + 10;
-      string homePath = path.Substring(0, homePathIndex);
 
-      return "/Users/Guest/Desktop/";
+      string homePath = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
+      return homePath;
     }
 
     public static void MakeOutput(string filePath, string projName, string nameSpace)

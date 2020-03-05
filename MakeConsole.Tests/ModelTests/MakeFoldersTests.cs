@@ -12,9 +12,9 @@ namespace File.Tests
     public void GetDirectory_ReturnCurrentWorkingDirectory_string()
     {
       string result = MakeFiles.GetDirectory();
-      string testDir = "/Users/Guest/Desktop/MakeConsole.Solutions";
+      string testDir = "/Users/Guest/Desktop";
       System.Console.WriteLine("Dir = " + testDir);
-      Assert.AreEqual(result, testDir);
+      Assert.AreEqual(testDir, result);
     }
 
   }
