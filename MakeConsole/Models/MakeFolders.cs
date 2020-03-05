@@ -52,7 +52,7 @@ namespace File.Models
       System.Console.WriteLine($"Writing modelsPath {modelsPath}");
 
       string modelcs = Path.Combine(modelsPath, $"{projName}.cs");
-      System.IO.File.Create(modelcs);
+      System.IO.File.WriteAllText(modelcs, Copy.Modelscs(nameSpace));
       System.Console.WriteLine($"Writing modelcs {modelcs}");
 
 

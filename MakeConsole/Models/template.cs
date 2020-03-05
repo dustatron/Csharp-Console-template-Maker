@@ -69,7 +69,7 @@ namespace " + nameSpace + @"
 using " + nameSpace + @".Models;
 using System;
 
-namespace File.Tests
+namespace " + nameSpace + @".Tests
 {
   [TestClass]
   public class MakeFilesTests
@@ -85,5 +85,17 @@ namespace File.Tests
 
     return result;
 
+  }
+
+  public static string Modelscs(string nameSpace)
+  {
+    string result = @"using System;
+
+namespace " + nameSpace + @".Models
+{
+  
+
+}";
+    return result;
   }
 }
